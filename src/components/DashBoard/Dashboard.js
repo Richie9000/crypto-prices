@@ -7,7 +7,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <button value="btc" className="btc btn">BTC</button>
+            <button onClick value="btc" className="btc btn">BTC</button>
             <CryptoCompare />
         </div>
     )

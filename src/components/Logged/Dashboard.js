@@ -1,9 +1,8 @@
 import React from 'react'
 import CryptoCompare from './CryptoCompare'
 
-const Dashboard = () => {
 
-    
+const Dashboard = () => {
 
     return (
         <div>

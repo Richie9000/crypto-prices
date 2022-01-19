@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { reduxActions } from '../../redux/app/app';
+import './login.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({});
@@ -16,14 +17,14 @@ const Login = () => {
     setFormData(newObj);
   };
   return (
-    <div className="">
-      <h1>Welcome!</h1>
-      <input onChange={(e) => { onChangeListener('name', e.target.value); }} placeholder="Name" type="Text" />
-      <input onChange={(e) => { onChangeListener('lastName', e.target.value); }} placeholder="Last Name" type="Text" />
-      <input onChange={(e) => { onChangeListener('email', e.target.value); }} placeholder="E-mail" type="Email" />
-      <input onChange={(e) => { onChangeListener('phoneNumber', e.target.value); }} placeholder="Phone Number" max="10" type="Text" />
-      <button type="button" onClick={() => { clickSubmitHandler(); }}>Submit</button>
-    </div>
+    <form className="login-wrapper">
+      <h1 className="title-login">Welcome!</h1>
+      <input className="input" onChange={(e) => { onChangeListener('name', e.target.value); }} placeholder="Name" type="Text" required />
+      <input className="input" onChange={(e) => { onChangeListener('lastName', e.target.value); }} placeholder="Last Name" type="Text" required />
+      <input className="input" onChange={(e) => { onChangeListener('email', e.target.value); }} placeholder="E-mail" type="Email" required />
+      <input className="input" onChange={(e) => { onChangeListener('phoneNumber', e.target.value); }} placeholder="Phone Number" max="10" type="Text" required />
+      <button clasName="submit-btn" type="button" onClick={() => { clickSubmitHandler(); }}>Submit</button>
+    </form>
   );
 };
 export default Login;

@@ -1,0 +1,29 @@
+.navigator-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  position: center;
+  margin-right: 2vw;
+}
+
+.title-footer {
+  font-size: 4vh;
+  display: flex;
+  margin-left: 10vw;
+}
+
+.input-footer {
+  margin-left: 10vw;
+}
+
+.footer-info {
+  font-size: 3vh;
+  margin-left: 10vw;
+}
+
+.footer-number {
+  font-size: 3vh;
+  margin-left: 10vw;
+}

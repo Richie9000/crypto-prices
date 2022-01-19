@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
+import './coin.css';
 
 const Coin = ({ props }) => {
   const providerData = useSelector((state) => state.mainReducer);
@@ -9,11 +10,11 @@ const Coin = ({ props }) => {
     return d;
   };
   return (
-    <div className="">
-      <h1>Provider 1</h1>
+    <div className="wrapper-coin">
+      <h1 className="title-coin">Crypto compare</h1>
       {
         providerData ? providerData[props].map((e) => (
-          <div key={e.USD}>
+          <div className="price-coin" key={e.USD}>
             {`${getTheTime()} - $${e.USD}`}
           </div>
         )) : null

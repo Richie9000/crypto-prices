@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reduxActions } from '../../../redux/app/app';
 import Coin from '../utilities/coin';
+import './view.css';
 
 const View = ({ props }) => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const View = ({ props }) => {
   }, []);
   return (
     <div>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div className="view-grapper">
         <Coin props="providerOne" />
         <Coin props="providerTwo" />
         <Coin props="providerThree" />

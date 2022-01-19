@@ -8,6 +8,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import View from './views/view';
+import './navigator.css';
 
 const Navigator = () => {
   const userData = useSelector((state) => state.userReducer);
@@ -27,9 +28,9 @@ const Navigator = () => {
       <div className="page_holder">
         <h1>{userData ? userData.name : null}</h1>
         <h1>{userData ? userData.lastName : null}</h1>
-        <div className="navigator_bar">
+        <div className="navigator-bar">
           {currency ? currency.map((elm) => (
-            <NavLink key={elm} activeClassName="selected_nav_item" className="nav_item" to={`/${elm}`}>{elm}</NavLink>
+            <NavLink key={elm} activeClassName="selected-nav-item" className="nav-item" to={`/${elm}`}>{elm}</NavLink>
           )) : null}
         </div>
         <Switch>
@@ -43,19 +44,20 @@ const Navigator = () => {
           )) : null}
         </Switch>
         <div className="footer">
-          <h1>Convert</h1>
+          <h1 className="title-footer">Convert</h1>
           <input
             type="number"
+            className="input-footer"
             onChange={(e) => {
               calculateCurrency(e.target.value);
             }}
           />
-          <h1>Provider 1</h1>
-          <h2 id="prov1">0</h2>
-          <h1>Provider 2</h1>
-          <h2 id="prov2">0</h2>
-          <h1>Provider 3</h1>
-          <h2 id="prov3">0</h2>
+          <h1 className="footer-info">Crytpo compare</h1>
+          <h2 className="footer-number" id="prov1">0</h2>
+          <h1 className="footer-info">Coin geko</h1>
+          <h2 className="footer-number" id="prov2">0</h2>
+          <h1 className="footer-info">Bitso</h1>
+          <h2 className="footer-number" id="prov3">0</h2>
         </div>
       </div>
     </Router>

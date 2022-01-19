@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -34,5 +35,4 @@ const View = ({ props }) => {
 View.propTypes = {
   props: PropTypes.string.isRequired,
 };
-
 export default View;

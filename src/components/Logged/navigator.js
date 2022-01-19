@@ -44,20 +44,28 @@ const Navigator = () => {
           )) : null}
         </Switch>
         <div className="footer">
-          <h1 className="title-footer">Convert</h1>
-          <input
-            type="number"
-            className="input-footer"
-            onChange={(e) => {
-              calculateCurrency(e.target.value);
-            }}
-          />
-          <h1 className="footer-info">Crytpo compare</h1>
-          <h2 className="footer-number" id="prov1">0</h2>
-          <h1 className="footer-info">Coin geko</h1>
-          <h2 className="footer-number" id="prov2">0</h2>
-          <h1 className="footer-info">Bitso</h1>
-          <h2 className="footer-number" id="prov3">0</h2>
+          <div className="footer-wrapper">
+            <h1 className="title-footer">Convert</h1>
+            <input
+              type="number"
+              className="input-footer"
+              onChange={(e) => {
+                calculateCurrency(e.target.value);
+              }}
+            />
+          </div>
+          <div>
+            <h1 className="footer-info">Crytpo compare</h1>
+            <h2 className="footer-number" id="prov1">0</h2>
+          </div>
+          <div>
+            <h1 className="footer-info">Coin geko</h1>
+            <h2 className="footer-number" id="prov2">0</h2>
+          </div>
+          <div>
+            <h1 className="footer-info">Bitso</h1>
+            <h2 className="footer-number" id="prov3">0</h2>
+          </div>
         </div>
       </div>
     </Router>

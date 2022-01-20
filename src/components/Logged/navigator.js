@@ -26,8 +26,8 @@ const Navigator = () => {
   return (
     <Router>
       <div className="page_holder">
-        <h1>{userData ? userData.name : null}</h1>
-        <h1>{userData ? userData.lastName : null}</h1>
+        <h1 className="title-nav">{userData ? userData.name : null}</h1>
+        <h1 className="title-nav">{userData ? userData.lastName : null}</h1>
         <div className="navigator-bar">
           {currency ? currency.map((elm) => (
             <NavLink key={elm} activeClassName="selected-nav-item" className="nav-item" to={`/${elm}`}>{elm}</NavLink>

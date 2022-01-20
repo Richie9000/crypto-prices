@@ -4,7 +4,7 @@ Simple web app created in React and Redux, user can login and consult the price 
 
 ## Live link
 
-- ![snapshot](./snapshot.png)
+- https://cryrto-prices.herokuapp.com/
 
 ## Built With
 

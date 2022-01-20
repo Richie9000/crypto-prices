@@ -2,9 +2,6 @@
 
 Simple web app created in React and Redux, user can login and consult the price of Bitcoin, Ethereum, and Riple, and convert the price to MXN.
 
-## Live link
-
-- https://cryrto-prices.herokuapp.com/
 
 ## Built With
 

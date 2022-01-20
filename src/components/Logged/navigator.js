@@ -15,13 +15,13 @@ const Navigator = () => {
   const providerData = useSelector((state) => state.mainReducer);
   const currency = ['BTC', 'ETH', 'XRP'];
   const calculateCurrency = (value) => {
-    const currencyChange = 3.90;
+    const currencyChange = 0.20;
     const prov1 = document.getElementById('prov1');
     const prov2 = document.getElementById('prov2');
     const prov3 = document.getElementById('prov3');
-    prov1.innerHTML = (value / (currencyChange)) * providerData.providerOne[0].USD;
-    prov2.innerHTML = (value / (currencyChange)) * providerData.providerTwo[0].USD;
-    prov3.innerHTML = (value / (currencyChange)) * providerData.providerThree[0].USD;
+    prov1.innerHTML = ((value / (currencyChange)) * providerData.providerOne[0].USD).toFixed(2);
+    prov2.innerHTML = ((value / (currencyChange)) * providerData.providerTwo[0].USD).toFixed(2);
+    prov3.innerHTML = ((value / (currencyChange)) * providerData.providerThree[0].USD).toFixed(2);
   };
   return (
     <Router>
@@ -45,7 +45,7 @@ const Navigator = () => {
         </Switch>
         <div className="footer">
           <div className="footer-wrapper">
-            <h1 className="title-footer">Convert</h1>
+            <h1 className="title-footer">Convert (MXN)</h1>
             <input
               type="number"
               className="input-footer"
@@ -55,7 +55,7 @@ const Navigator = () => {
             />
           </div>
           <div>
-            <h1 className="footer-info">Crytpo compare</h1>
+            <h1 className="footer-info">Crypto</h1>
             <h2 className="footer-number" id="prov1">0</h2>
           </div>
           <div>

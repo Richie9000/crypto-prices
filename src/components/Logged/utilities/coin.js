@@ -11,7 +11,7 @@ const Coin = ({ props }) => {
   };
   return (
     <div className="wrapper-coin">
-      <h1 className="title-coin">Crypto compare</h1>
+      <h1 className="title-coin">Bitso</h1>
       {
         providerData ? providerData[props].map((e) => (
           <div className="price-coin" key={e.USD}>

@@ -13,7 +13,7 @@
   grid-template-columns: repeat(5, 20vw);
 }
 .title-footer {
-  font-size: 4vh;
+  font-size: 2.5vh;
   display: flex;
   margin-left: 10vw;
 }

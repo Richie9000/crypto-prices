@@ -17,7 +17,7 @@ const Login = () => {
     setFormData(newObj);
   };
   return (
-    <form className="login-wrapper" required>
+    <form className="login-wrapper">
       <h1 className="title-login">Welcome!</h1>
       <input className="input" onChange={(e) => { onChangeListener('name', e.target.value); }} placeholder="Name" type="Text" required />
       <input className="input" onChange={(e) => { onChangeListener('lastName', e.target.value); }} placeholder="Last Name" type="Text" required />

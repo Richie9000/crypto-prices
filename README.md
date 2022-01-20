@@ -17,9 +17,9 @@ To get a local copy up and running follow these simple steps:
 
 1. Go to the [repository page](https://github.com/Richie9000/crypto-prices).
 2. Press the "Code" button and copy the link.
-3. Clone it using git command `git clone <link>`.
+3. Clone it using git command `git clone https://github.com/Richie9000/crypto-prices`.
 
-### `npm start`f
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

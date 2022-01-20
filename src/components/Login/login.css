@@ -5,20 +5,39 @@ body {
 }
 
 .title-login {
-  font-size: 5vh;
+  color: aliceblue;
+  font-size: 20px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .login-wrapper {
   display: grid;
   width: 20vw;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  justify-items: center;
+  justify-items: top;
   transform: translate(-50%, -50%);
-  background: gray;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .input {
   margin: 10px;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background: #ff652f;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 8vw;
+  margin-left: 60px;
 }

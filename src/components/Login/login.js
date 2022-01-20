@@ -23,7 +23,7 @@ const Login = () => {
       <input className="input" onChange={(e) => { onChangeListener('lastName', e.target.value); }} placeholder="Last Name" type="Text" required />
       <input className="input" onChange={(e) => { onChangeListener('email', e.target.value); }} placeholder="E-mail" type="Email" required />
       <input className="input" onChange={(e) => { onChangeListener('phoneNumber', e.target.value); }} placeholder="Phone Number" max="10" type="Text" required />
-      <button clasName="submit-btn" type="button" onClick={() => { clickSubmitHandler(); }} required>Submit</button>
+      <button className="submit" type="button" onClick={() => { clickSubmitHandler(); }} required>SUBMIT</button>
     </form>
   );
 };

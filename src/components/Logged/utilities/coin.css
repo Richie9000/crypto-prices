@@ -3,10 +3,14 @@
 }
 
 .title-coin {
+  font-family: "Karla", sans serif;
   font-size: 5vh;
+  color: rgba(13, 13, 20, 0.925);
 }
 
 .price-coin {
+  font-family: "Karla", sans serif;
   font-size: 3vh;
   margin: 5px;
+  color: rgba(31, 30, 48, 0.925);
 }

@@ -19,13 +19,13 @@ const Navigator = () => {
     const prov1 = document.getElementById('prov1');
     const prov2 = document.getElementById('prov2');
     const prov3 = document.getElementById('prov3');
-    prov1.innerHTML = ((value / (currencyChange)) * providerData.providerOne[0].USD).toFixed(2);
-    prov2.innerHTML = ((value / (currencyChange)) * providerData.providerTwo[0].USD).toFixed(2);
-    prov3.innerHTML = ((value / (currencyChange)) * providerData.providerThree[0].USD).toFixed(2);
+    prov1.innerHTML = `$${((value / (currencyChange)) * providerData.providerOne[0].USD).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
+    prov2.innerHTML = `$${((value / (currencyChange)) * providerData.providerTwo[0].USD).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
+    prov3.innerHTML = `$${((value / (currencyChange)) * providerData.providerThree[0].USD).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}`;
   };
   return (
     <Router>
-      <div className="page_holder">
+      <div className="page-holder">
         <h1 className="title-nav">{userData ? userData.name : null}</h1>
         <h1 className="title-nav">{userData ? userData.lastName : null}</h1>
         <div className="navigator-bar">
@@ -45,7 +45,7 @@ const Navigator = () => {
         </Switch>
         <div className="footer">
           <div className="footer-wrapper">
-            <h1 className="title-footer">Convert (MXN)</h1>
+            <h1 className="title-footer">Convert BTC to MXN</h1>
             <input
               type="number"
               className="input-footer"

@@ -18,16 +18,18 @@ body {
   position: fixed;
   top: 60%;
   left: 50%;
-  justify-items: top;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
   justify-content: center;
   padding-bottom: 20px;
+  height: 22vw;
 }
 
 .input {
-  margin: 10px;
+  margin: 2vh;
+  border-radius: 5px;
+  background: rgba(252, 250, 250, 0.9);
 }
 
 .submit {
@@ -40,4 +42,5 @@ body {
   cursor: pointer;
   width: 8vw;
   margin-left: 60px;
+  margin-top: 2vh;
 }

@@ -9,6 +9,8 @@ import {
 } from 'react-router-dom';
 import View from './views/view';
 import './navigator.css';
+// eslint-disable-next-line import/order
+import { FaUserCircle } from 'react-icons/fa';
 
 const Navigator = () => {
   const userData = useSelector((state) => state.userReducer);
@@ -26,6 +28,7 @@ const Navigator = () => {
   return (
     <Router>
       <div className="page-holder">
+        <FaUserCircle className="icon-nav" />
         <h1 className="title-nav">{userData ? userData.name : null}</h1>
         <h1 className="title-nav">{userData ? userData.lastName : null}</h1>
         <div className="navigator-bar">

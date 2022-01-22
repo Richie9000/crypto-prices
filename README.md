@@ -2,7 +2,9 @@
 
 Simple web app created in React and Redux, user can login and consult the price of Bitcoin, Ethereum, and Riple, and convert the price to MXN.
 
+## Screenshot
 
+- ![snapshot](./snapshot.png)
 ## Built With
 
 - ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
